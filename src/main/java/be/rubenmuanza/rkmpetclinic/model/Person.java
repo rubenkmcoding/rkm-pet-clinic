@@ -9,6 +9,7 @@ public class Person {
     private String firstName;
     private String lastName;
 
+    // getters and setters
     public String getFirstName() {
         return firstName;
     }
