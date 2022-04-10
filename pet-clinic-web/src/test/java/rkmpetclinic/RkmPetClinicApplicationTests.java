@@ -1,4 +1,4 @@
-package be.rubenmuanza.rkmpetclinic;
+package rkmpetclinic;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
