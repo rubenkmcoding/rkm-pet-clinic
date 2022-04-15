@@ -1,11 +1,11 @@
 package be.rubenmuanza.rkmpetclinic.services.map;
 
 import be.rubenmuanza.rkmpetclinic.model.Pet;
-import be.rubenmuanza.rkmpetclinic.services.CrudService;
+import be.rubenmuanza.rkmpetclinic.services.PetService;
 
 import java.util.Set;
 
-public class PetServiceMap extends AbstractMapService<Pet, Long> implements CrudService<Pet, Long> {
+public class PetServiceMap extends AbstractMapService<Pet, Long> implements PetService {
 
     @Override
     public Set<Pet> findAll() {

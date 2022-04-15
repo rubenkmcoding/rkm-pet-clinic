@@ -1,11 +1,11 @@
 package be.rubenmuanza.rkmpetclinic.services.map;
 
 import be.rubenmuanza.rkmpetclinic.model.Owner;
-import be.rubenmuanza.rkmpetclinic.services.CrudService;
+import be.rubenmuanza.rkmpetclinic.services.OwnerService;
 
 import java.util.Set;
 
-public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements CrudService<Owner, Long> {
+public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements OwnerService {
 
     @Override
     public Set<Owner> findAll() {
@@ -35,8 +35,8 @@ public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements 
     }
 
 
-
-
-
-
+    @Override
+    public Owner findByLastName(String lastName) {
+        return null;
+    }
 }
