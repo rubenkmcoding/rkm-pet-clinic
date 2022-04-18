@@ -2,9 +2,11 @@ package be.rubenmuanza.rkmpetclinic.services.map;
 
 import be.rubenmuanza.rkmpetclinic.model.Vet;
 import be.rubenmuanza.rkmpetclinic.services.VetService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+@Service
 public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetService {
     @Override
     public Set<Vet> findAll() {

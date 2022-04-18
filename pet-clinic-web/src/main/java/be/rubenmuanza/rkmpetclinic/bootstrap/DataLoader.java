@@ -4,8 +4,6 @@ import be.rubenmuanza.rkmpetclinic.model.Owner;
 import be.rubenmuanza.rkmpetclinic.model.Vet;
 import be.rubenmuanza.rkmpetclinic.services.OwnerService;
 import be.rubenmuanza.rkmpetclinic.services.VetService;
-import be.rubenmuanza.rkmpetclinic.services.map.OwnerServiceMap;
-import be.rubenmuanza.rkmpetclinic.services.map.VetServiceMap;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
@@ -16,9 +14,10 @@ public class DataLoader implements CommandLineRunner{
     private final VetService vetService;
 
 
-    public DataLoader() {
-        ownerService = new OwnerServiceMap();
-        vetService = new VetServiceMap();
+
+    public DataLoader(OwnerService ownerService, VetService vetService) {
+        this.ownerService = ownerService;
+        this.vetService = vetService;
     }
 
     //methode
